@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // React strict mode gives us warnings about potential bugs
   <React.StrictMode>
+    {/* We are rendering the code from App.js */}
     <App />
   </React.StrictMode>
 );
